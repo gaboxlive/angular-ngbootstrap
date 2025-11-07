@@ -13,4 +13,8 @@ export const routes: Routes = [
       import('./pages/home/home.component').then((mod) => mod.HomeComponent),
     canActivate: [loginGuard],
   },
+  {
+    path: '**',
+    redirectTo: '/home',
+  },
 ];

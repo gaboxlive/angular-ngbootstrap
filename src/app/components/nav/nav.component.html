@@ -1,17 +1,8 @@
+@if (appStore.isLogged()) {
 <header class="p-3 text-bg-dark">
-  <div class="container">
-    <div
-      class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
-    >
-      <a
-        [routerLink]="['home']"
-        class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none me-3"
-      >
-        Logo Here
-      </a>
-      <ul
-        class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
-      >
+  <div class="container-fluid">
+    <div class="d-flex flex-wrap align-items-center justify-content-center">
+      <ul class="nav mb-2 justify-content-center mb-md-0">
         <li>
           <a [routerLink]="['home']" class="nav-link px-2 text-secondary"
             >Inicio</a
@@ -29,26 +20,7 @@
           >
         </li>
       </ul>
-      <div class="text-end">
-        @if (appStore.isLogged()) {
-        <button
-          (click)="login(true, 'Gabriel Cruz', 'gacg30@hotmail.com')"
-          type="button"
-          class="btn btn-outline-light me-2"
-        >
-          Hola {{ appStore.userName() }}
-        </button>
-        } @else {
-        <button
-          (click)="login(true, 'Gabriel Cruz', 'gacg30@hotmail.com')"
-          type="button"
-          class="btn btn-outline-light me-2"
-        >
-          Login
-        </button>
-        }
-        <button type="button" class="btn btn-warning">Sign-up</button>
-      </div>
     </div>
   </div>
 </header>
+}

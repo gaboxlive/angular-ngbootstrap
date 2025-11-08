@@ -1,0 +1,26 @@
+@if (appStore.isLogged()) {
+<header class="p-3 text-bg-dark">
+  <div class="container-fluid">
+    <div class="d-flex flex-wrap align-items-center justify-content-center">
+      <ul class="nav mb-2 justify-content-center mb-md-0">
+        <li>
+          <a [routerLink]="['home']" class="nav-link px-2 text-secondary"
+            >Inicio</a
+          >
+        </li>
+        <li>
+          <a [routerLink]="['home']" class="nav-link px-2 text-white">Menu 2</a>
+        </li>
+        <li>
+          <a [routerLink]="['home']" class="nav-link px-2 text-white">Menu 3</a>
+        </li>
+        <li>
+          <a [routerLink]="['login']" class="nav-link px-2 text-white"
+            >Menu 4</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+}

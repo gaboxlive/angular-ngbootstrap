@@ -1,0 +1,42 @@
+<div class="d-flex align-items-center justify-content-center vh-100">
+  <div class="card w-25">
+    <div class="card-header text-bg-dark">
+      <h3>Inicio de sesión</h3>
+    </div>
+    <div class="card-body">
+      <form>
+        <label for="username" class="form-label">Correo electrónico</label>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            name="username"
+            required
+          />
+          <span class="input-group-text fs-5" id="basic-addon2">
+            <i class="bi-person-badge"></i>
+          </span>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Contraseña</label>
+          <div class="input-group mb-3">
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="password"
+              required
+            />
+            <span class="input-group-text fs-5" id="basic-addon2">
+              <i class="bi-file-lock2"></i>
+            </span>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-dark w-100" (click)="login()">
+          Iniciar sesión
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,8 @@
-import { Component, inject, effect } from '@angular/core';
+import { Component, inject, effect, OnInit } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { AppStore } from '../../state/appStore';
+import { toObservable } from '@angular/core/rxjs-interop';
+import { filter, Observable } from 'rxjs';
 
 @Component({
   selector: 'app-nav',
